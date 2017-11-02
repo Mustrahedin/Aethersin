@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style>
+.myButton {
+	-moz-box-shadow: 3px 4px 22px 0px #801515;
+	-webkit-box-shadow: 3px 4px 22px 0px #801515;
+	box-shadow: 3px 4px 22px 0px #801515;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #cc2626), color-stop(1, #7a0707));
+	background:-moz-linear-gradient(top, #cc2626 5%, #7a0707 100%);
+	background:-webkit-linear-gradient(top, #cc2626 5%, #7a0707 100%);
+	background:-o-linear-gradient(top, #cc2626 5%, #7a0707 100%);
+	background:-ms-linear-gradient(top, #cc2626 5%, #7a0707 100%);
+	background:linear-gradient(to bottom, #cc2626 5%, #7a0707 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc2626', endColorstr='#7a0707',GradientType=0);
+	background-color:#cc2626;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#fcfcfc;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 43px;
+	text-decoration:none;
+	text-shadow:1px 0px 50px #e1e2ed;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7a0707), color-stop(1, #cc2626));
+	background:-moz-linear-gradient(top, #7a0707 5%, #cc2626 100%);
+	background:-webkit-linear-gradient(top, #7a0707 5%, #cc2626 100%);
+	background:-o-linear-gradient(top, #7a0707 5%, #cc2626 100%);
+	background:-ms-linear-gradient(top, #7a0707 5%, #cc2626 100%);
+	background:linear-gradient(to bottom, #7a0707 5%, #cc2626 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7a0707', endColorstr='#cc2626',GradientType=0);
+	background-color:#7a0707;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+</style>
+</head>
+
+<body>
+    <div id="content" style="width:100%; margin:0 auto;">
+    	<div id="logo" style="width: 300px; margin:0 auto; min-height: 350px;">
+    		<img id="logo_img" src="images/aethersin_logo.png" width="300" height="300" alt=""/>
+        </div>
+        <div id="brand_name" style="width:900px; margin:0 auto; min-height: 180px;">
+        	<img class="brand_name" id="a" src="images/Name/A.png" width="100" height="100" alt="" style="float:left"/>
+            <img class="brand_name" id="e" src="images/Name/E.png" width="100" height="100" alt="" style="float:left"/>
+            <img class="brand_name" id="t" src="images/Name/T.png" width="100" height="100" alt="" style="float:left"/>
+            <img class="brand_name" id="h" src="images/Name/H.png" width="100" height="100" alt="" style="float:left"/>
+            <img class="brand_name" id="e2" src="images/Name/E2.png" width="100" height="100" alt="" style="float:left"/>
+            <img class="brand_name" id="r" src="images/Name/R.png" width="100" height="100" alt="" style="float:left"/>
+            <img class="brand_name" id="s" src="images/Name/S.png" width="100" height="100" alt="" style="float:left"/>
+            <img class="brand_name" id="i" src="images/Name/I.png" width="100" height="100" alt="" style="float:left"/>
+            <img class="brand_name" id="n" src="images/Name/N.png" width="100" height="100" alt="" style="float:left"/>
+    	</div>
+        <br/>
+        <br/>
+        <br/>
+        <div class="social_media" style="width:400px; margin:0 auto;">
+        	<img src="images/social_media/f.png" width="100" height="100" alt="" style="float:left"/>
+            <img src="images/social_media/y.png" width="100" height="100" alt="" style="float:left"/>
+            <img src="images/social_media/i.png" width="100" height="100" alt="" style="float:left"/>
+            <img src="images/social_media/t.png" width="100" height="100" alt="" style="float:left"/>
+            <center><a href="#" class="myButton">Enter to website</a></center>
+        </div>
+    </div>
+    
+    <div id="footer" style="width:100%; float:left">
+<!--    	<audio id="buzzer" src="Inertia.mp3" type="audio/ogg"></audio>    
+-->    </div>
+
+</body>
+</html>
+
+<script>
+	$(document).ready(function(){
+        $("body").css("background-color", "black");
+		$("#logo_img, .brand_name, .social_media").css("display", "none");
+		$("#logo_img").fadeIn(3000);
+		$("#footer").stop("true").delay('3000').queue(function() { 
+                    $(this).html('<audio autoplay="autoplay"><source src="Inertia.mp3" type="audio/mp3" /></audio>');
+                });
+		
+        $("#a").delay(4000).fadeIn(1000).fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500);
+		$("#e").delay(4000).fadeIn(1000).fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500);
+		$("#t").delay(4000).fadeIn(1000).fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500);
+		$("#h").delay(4000).fadeIn(1000).fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500);
+		$("#e2").delay(4000).fadeIn(1000).fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500);
+		$("#r").delay(4000).fadeIn(1000).fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500);
+		$("#s").delay(4000).fadeIn(1000).fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500);
+		$("#i").delay(4000).fadeIn(1000).fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500);
+		$("#n").delay(4000).fadeIn(1000).fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500);
+		$(".social_media").delay(9000).fadeIn();
+		$(".myButton").click(function(){
+			$("#a").fadeOut(2000);
+			$("#e").fadeOut(2000);
+			$("#t").fadeOut(2000);
+			$("#h").fadeOut(2000);
+			$("#e2").fadeOut(2000);
+			$("#r").fadeOut(2000);
+			$("#s").fadeOut(2000);
+			$("#i").fadeOut(2000);
+			$("#n").fadeOut(2000);
+			$("#logo_img").fadeOut(2000);
+			$(".social_media").fadeOut(2000);
+			setTimeout(function() {
+			  window.location.href = "index.html";
+			}, 4000);
+		});
+	});
+		
+</script>
